@@ -21,7 +21,7 @@ export class AppComponent {
     }, 2000);
   }
   onCreateStatus() {
-    this.serverCreationStatus = "Server is Created";
+    this.serverCreationStatus = "Server is Created  Name is" + this.serverName;
   }
   onUpadteServerName(event: Event) {
     this.serverName = (<HTMLInputElement>event.target).value;
