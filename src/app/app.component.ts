@@ -10,6 +10,7 @@ export class AppComponent {
   serverId = 10;
   serverStatus = "offline";
   allowNewServer = false;
+  serverCreationStatus = "No server is created";
   getServerStatus() {
     return this.serverStatus;
   }
@@ -17,5 +18,8 @@ export class AppComponent {
     setTimeout(() => {
       this.allowNewServer = true;
     }, 2000);
+  }
+  onCreateStatus() {
+    this.serverCreationStatus = "Server is Created";
   }
 }
