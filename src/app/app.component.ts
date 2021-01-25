@@ -12,6 +12,7 @@ export class AppComponent {
   allowNewServer = false;
   serverCreationStatus = "No server is created";
   serverName = "";
+  serverCreated = false;
   getServerStatus() {
     return this.serverStatus;
   }
@@ -21,6 +22,7 @@ export class AppComponent {
     }, 2000);
   }
   onCreateStatus() {
+    this.serverCreated = true;
     this.serverCreationStatus = "Server is Created  Name is" + this.serverName;
   }
   onUpadteServerName(event: Event) {
