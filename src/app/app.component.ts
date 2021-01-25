@@ -22,4 +22,7 @@ export class AppComponent {
   onCreateStatus() {
     this.serverCreationStatus = "Server is Created";
   }
+  onUpadteServerName(event: any) {
+    console.log(event);
+  }
 }
