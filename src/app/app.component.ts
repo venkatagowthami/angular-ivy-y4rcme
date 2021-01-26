@@ -11,7 +11,7 @@ export class AppComponent {
   serverStatus = "offline";
   allowNewServer = false;
   serverCreationStatus = "No server is created";
-  serverName = "";
+  serverName = "Testserver";
   serverCreated = false;
   getServerStatus() {
     return this.serverStatus;
