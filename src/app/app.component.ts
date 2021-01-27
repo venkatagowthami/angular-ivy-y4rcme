@@ -17,9 +17,13 @@ export class AppComponent {
     return this.serverStatus;
   }
   constructor() {
+    this.serverStatus = Math.random() > 0.5 ? "online" : "offline";
     setTimeout(() => {
       this.allowNewServer = true;
     }, 2000);
+    // getColor(){
+    //     this.serverStatus==='online'?'green':'red';
+    // }
   }
   onCreateStatus() {
     this.serverCreated = true;
